@@ -1,0 +1,329 @@
+body{
+	margin: 0;
+	overflow-y: hidden;
+	
+}
+.popup{
+	display: none;
+	position: absolute;
+    background: #000000;
+    opacity: .6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+	z-index: 10;
+}
+/*================================= login.html =================================*/
+.inpt{
+	border: .2vw solid #ff982b;
+	border-radius: .5vw;
+	outline: none;
+	margin-top: .5vw;
+	font-family: tahoma;
+}
+.header {
+	color: #33ccff;
+	font-family: 'BrushLetteringOneBoldItalic';
+	font-size: 10vw;
+	width: 100%;
+	margin-top: 20vh;
+	text-align: center;
+	margin-bottom: 1vw;
+}
+#pass, 
+#user {
+	display: block;
+	width: 30vw;
+	height: calc(2vw + 10px);
+	height: -webkit-calc(2vw + 10px);
+	font-size: 2vw;
+	padding: .2vw;
+	margin-left: calc(50% - 15vw);
+	margin-left: -webkit-calc(50% - 15vw);
+	text-align: center;
+}
+.inline{
+	display: inline;
+}
+.login{
+	display: inline-block;
+	width: 10vw;
+	height: calc(2vw + 10px);
+	height: -webkit-calc(2vw + 10px);
+	background: #ff982b;
+	color: white;
+	font-size: 1vw;
+	border: .5vw solid #ff982b;
+	border-radius: .5vw;
+	margin-left: calc(50% - 10.5vw);
+	margin-left: -webkit-calc(50% - 10.5vw);
+	margin-top: .5vw;
+}
+.login:hover{
+	opacity: .8;
+}
+.register{
+	display: inline-block;
+	width: 10vw;
+	height: calc(2vw + 10px);
+	height: -webkit-calc(2vw + 10px);
+	font-size: 1vw;
+	background: #ffc12b;
+	color: white;
+	border: .2vw solid #ffc12b;
+	border-radius: .5vw;
+	margin-left: 1vw
+	
+}
+.register:hover{
+	opacity: .8;
+}
+.regMsg{
+	margin-top: 2vw;
+    font-size: 2vw;
+    color: #009900;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+.errorMsg {
+    margin-top: 2vw;
+    font-size: 2vw;
+    color: red;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+/*================================= register.html =================================*/
+.regElement{
+	width: 20vw;
+	height: 2vw;
+	font-size: 1vw;
+	margin-left: calc(50% - 10vw);
+	margin-left: -webkit-calc(50% - 10vw);
+	text-align: center;
+}
+#regContainer .header{
+	font-size: 3vw;
+	margin: 1vw;
+	width: 3vw;
+}
+#regContainer form{
+	margin-top: 7vw;
+}
+#regContainer .register{
+	display: block;
+	margin-top: 1vw;
+	margin-left: calc(50% - 5vw);
+	margin-left: -webkit-calc(50% - 5vw);
+}
+#problem{
+	margin-top: 2vw;
+    font-size: 2vw;
+    color: red;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;	
+}
+/*================================= xaction.html =================================*/
+.xactionBox {
+    width: 75%;
+    margin-left: 12.5%;
+    Height: calc(8vh + 20px);
+    border: 1px solid gray;
+    padding: .2vw;
+    border-radius: 5px;
+    margin-top: 1vw;
+}
+.deleteAccount,
+.xactionBox img {
+	Height: calc(5vh + 20px);
+	background: rgba(246,41,12,1);
+	background: -moz-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(241,111,92,1) 0%, rgba(178,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,41,12,1)), color-stop(0%, rgba(241,111,92,1)), color-stop(100%, rgba(178,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(241,111,92,1) 0%, rgba(178,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(241,111,92,1) 0%, rgba(178,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(241,111,92,1) 0%, rgba(178,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(246,41,12,1) 0%, rgba(241,111,92,1) 0%, rgba(178,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6290c', endColorstr='#b20000', GradientType=0 );
+	margin:0;
+	padding:0;
+	display: inline-block;
+	float: right;
+	border-radius: 5px;
+}
+.xactionBox img:hover{
+	opacity: .8;
+}
+.xactionBox .edit{
+	background: rgba(76,76,76,1);
+	background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(0%, rgba(102,102,102,1)), color-stop(0%, rgba(44,44,44,1)), color-stop(0%, rgba(89,89,89,1)), color-stop(91%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+	background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(44,44,44,1) 0%, rgba(89,89,89,1) 0%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+}
+.xactionBox .vendor{
+	display: inline-block;
+	font-size: 1.5vw;
+	margin:0;
+	padding:0;
+	padding-left: .2vw;
+	width: 25%;
+	float: left;
+	text-align: center;
+	height: calc(5vh + 20px);
+    padding: .7vw;
+}
+.xactionBox .amnt{
+	display: inline-block;
+	margin:0;
+	font-size: 2vw;
+	color: #0BB200;
+	width: 25%;
+	text-align: center;
+	padding: .5vw;
+	float: right;
+	margin-right: 5vw;
+}
+/*================================= mainScreen.html =================================*/
+.banner {
+    height: 2.5em;
+    background: #33ccff;
+    color: white;
+    font-size: calc(1vw + 10px);
+}
+.bannerGreet{
+	float: right;
+	margin: .5em;
+	font-family: 'BrushLetteringOneBoldItalic';
+}
+.bannerHeader {
+	color: #ffffff;
+	width: 15%;
+	font-size: 1.5em;
+	float: left;
+	margin: 0;
+	text-align: left;
+	margin-top: .25em;
+	margin-left: .5em;
+}
+.profIcon {
+	width: 1.5em;
+	margin: .5em;
+	float: right;
+}
+.accountBox{
+	width: 50vw;
+    height: 100vh;
+    border-bottom: none;
+    border-top: none;
+    margin-left: 25vw;
+    overflow-y: scroll;
+}
+.accountBox::-webkit-scrollbar{
+	display: none;
+}
+.accountBox h3 {
+	margin:0;
+}
+.addNew{
+	opacity: 1;
+    width: 20vw;
+    border-radius: .5em;
+	background: #e0e0e0;
+    text-align: center;
+    opacity: 1;
+    margin-top: 2vw;
+    margin-left: 15vw;
+    background: #ff982b;
+	margin-bottom: 10vh;
+}
+.addNew:hover{
+	opacity: .8;
+	cursor: pointer;
+}
+.addNew h2 {
+    padding: 1.25vw;
+    margin: 0;
+	color: #e0e0e0;
+}
+.newAccountForm{
+	display: none;
+    width: 50vw;
+    height: 75vh;
+    background: #ffffff;
+    position: absolute;
+    z-index: 20;
+    top: -100vh;
+    left: 25vw;
+    border: 2px solid black;
+    border-radius: 3vw;
+}
+#newAccount{
+	margin-top: 14vh;
+}
+.createAccount{
+	display: inline-block;
+	width: 10vw;
+	height: calc(2vw + 10px);
+	height: -webkit-calc(2vw + 10px);
+	font-size: 1vw;
+	background: #33ccff;
+	color: white;
+	border: .5vw solid #33ccff;
+	border-radius: .5vw;
+	margin-left: .5vw;
+	float: right;
+}
+.accElement{
+	width: 20vw;
+	height: 2vw;
+	font-size: 1vw;
+	margin-left: calc(50% - 10vw);
+	margin-left: -webkit-calc(50% - 10vw);
+	text-align: center;
+	margin-top: 1vh;
+}
+.cancel{
+	display: inline-block;
+	width: 10vw;
+	height: calc(2vw + 10px);
+	height: -webkit-calc(2vw + 10px);
+	font-size: 1vw;
+	background: #ffc12b;
+	color: white;
+	border: .5vw solid #ffc12b;
+	border-radius: .5vw;
+	float: left;
+}
+.cancel:hover,
+.createAccount:hover{
+	opacity: .8;
+}
+#submitButtons{
+	width: 25vw;
+    padding: 2.5vw;
+    margin-left: 10.5vw;
+}
+#logout {
+    position: absolute;
+    background: #ffffff;
+    border: .2vw solid black;
+    margin-top: 2.5em;
+    right: 0;
+	display: none;
+}
+#logoutButton{
+	font-size: 2vw;
+	font-weight: bold;
+	border: none;
+	background: #ffffff;
+	
+	
+}
+

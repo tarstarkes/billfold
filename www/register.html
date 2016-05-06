@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Billfold-Register</title>
+	<!-- linked external stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<!-- linked font face for brush lettering -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/brush-lettering-one" type="text/css"/>
+
+	<!-- viewport meta tag for responsive design, allows use of vw and vh as increments -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- character encoding-->
+	<meta charset="utf-8"/>
+	
+	<!-- javascript scripts running on page -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="regContainer">
+		<h1 class="header">Billfold</h1>
+		<!-- When submitted, this form returns to the login.php page with all of the
+			necessary data from the form in the $_POST array. -->
+		<div id="problem">
+			<h3></h3>
+		</div>
+		<form id='regForm' action="javascript: void(0);">
+			<input name="fName" class="inpt regElement" placeholder="first name" required></input>
+			<input name="lName" class="inpt regElement" placeholder="last name" required></input>
+			<input name="email" class="inpt regElement" placeholder="email" required></input>
+			<input name="confEmail" class="inpt regElement" placeholder="confirm email" required></input>
+			<input name="pass" class="inpt regElement" placeholder="password" required></input>
+			<input name="confPass" class="inpt regElement" placeholder="confirm password" required></input>
+			<input name="secretQ" class="inpt regElement" maxlength="30" placeholder="Secret Question" required></input>
+			<input name="secretA" class="inpt regElement" placeholder="Secret Answer" required></input>
+			<input type="submit" class="register" name="reg" value="Register"></input>
+		</form>
+	</div>
+</body>
+</html>

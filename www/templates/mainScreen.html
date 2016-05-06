@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Billfold</title>
+	<!-- linked external stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<!-- linked font face for brush lettering -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/brush-lettering-one" type="text/css"/>
+
+	<!-- viewport meta tag for responsive design, allows use of vw and vh as increments -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- character encoding-->
+	<meta charset="utf-8"/>
+	
+	<!-- javascript scripts running on page -->
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+</head>
+
+<body>
+<div id="mainScreen">
+	<div class="banner">
+		<div id="logout">
+			<form action="index.php" method="post">
+				<input name="action" style="display: none;" value="logout">
+				<input id="logoutButton" type="submit" value="Logout"></input>
+			</form>
+		</div>
+		<h2 class="header bannerHeader">Billfold</h2>
+		<img class="profIcon" src="img/profile.png"></img>
+		<h3 class="bannerGreet">Welcome <?php echo $recordSet->fName?></h3>
+	</div>
+	<div class="accountBox">
+		<?php echo loadAccounts($recordSet->user_id);?>
+		<div class="addNew">
+			<h2>Add a New Account</h2>
+		</div>
+	</div>
+</div>
+<div class="popup">
+</div>
+<div class="newAccountForm">
+	<form id='newAccount' action="index.php" method="post">
+		<input name="accName" class="inpt accElement" placeholder="Account Name" maxlength="20" required></input>
+		<input name="balance" type="number" class="inpt accElement" placeholder="Starting Balance" required></input>
+		<select name="accType" class="inpt accElement" value="Account Type" required>
+			<option selected="selected" value="">Account Type</option>
+			<option name="checking" value="Checking">Checking</option>
+			<option name="savings" value="Savings">Savings</option>
+			<option name="creditLine" value="Credit Line">Credit Line</option>
+		</select>
+		<input name="limit" class="inpt accElement" placeholder="Account Limit"></input>
+		<input name="desc" class="inpt accElement" placeholder="Account Description" maxlength="256" ></input>
+		<input name="linkUsers" class="inpt accElement" placeholder="Add Contributor(s) By Email Address"></input>
+		<input name="action" style="display: none;" value="newAccount"></input>
+		<input name="userId" style="display: none;" value="<?php echo $recordSet->user_id;?>"></input>
+		<div id="submitButtons">
+			<input type="submit" class="createAccount" name="newAcc" value="Create"></input>
+			<input type="submit" class="cancel" name="cancelWindow" value="Cancel"></input>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>

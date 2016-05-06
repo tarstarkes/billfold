@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Billfold</title>
+	<!-- linked external stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<!-- linked font face for brush lettering -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/brush-lettering-one" type="text/css"/>
+
+	<!-- viewport meta tag for responsive design, allows use of vw and vh as increments -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- character encoding-->
+	<meta charset="utf-8"/>
+	
+	<!-- javascript scripts running on page -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="logContainer">
+		<h1 class="header">Billfold</h1>
+		
+		<!-- This login form currently reloads 
+		the page when the submit button is clicked 
+		in order to clear $_POST for testing, this 
+		is not permanent, it will eventually query
+		a database. -->
+		<form class="inline" action="index.php" method="post">
+			<input name="action" style="display: none;" id="action" value="login"></input> 
+			<input name="email" placeholder="e-mail" id="user" class="inpt"></input>
+			<input name="pass" placeholder="password" id="pass" class="inpt" type="password"></input>
+			<input type="submit" name="login" value="Login" class="login"></input>
+		</form>
+		<!-- This register form button takes you to
+		the registration page when clicked -->
+		<form class="inline" action="register.html">
+			<input type="submit" name="register" value="Register" class="register"></input>
+		</form>
+		
+	</div>
+	<div class="regMsg">
+		<?php if(isset($recordSet['msg'])){echo $recordSet['msg'];}?>
+	</div>
+	<div class="errorMsg">
+		<?php if(isset($recordSet['error'])){echo $recordSet['error'];}?>
+	</div>
+</body>
+
+</html>
